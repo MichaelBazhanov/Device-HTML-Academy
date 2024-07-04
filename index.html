@@ -304,10 +304,10 @@
         </ul>
       </section>
 
-      <section class="services">
-        <h2 class="visually-hidden">Сервисы</h2>
+      <section class="services services-tabs">
+        <h2 class="visually-hidden services-title">Сервисы</h2>
 
-        <ul class="services-advantages">
+        <ol class="services-advantages">
           <li
             class="services-advantages-item services-advantages-item-icon-delivery services-advantages-item-current"
           >
@@ -330,13 +330,88 @@
               условиях</a
             >
           </li>
-        </ul>
+        </ol>
 
-        <p class="services-link -group">
-          <a class="link link-dark" href="#">Доставка</a>
-          <a class="link" href="#">Гарантия</a>
-          <a class="link" href="#">Кредит</a>
+        <p
+          class="services-tablist"
+          role="tablist"
+          aria-labelledby="services-title"
+        >
+          <button
+            class="services-tab link link-dark"
+            role="tab"
+            type="button"
+            id="services-tab-1"
+            aria-selected="true"
+            aria-controls="tabpanel-1"
+          >
+            Доставка
+          </button>
+          <button
+            class="services-tab link"
+            role="tab"
+            type="button"
+            id="services-tab-2"
+            aria-selected="false"
+            aria-controls="tabpanel-2"
+            tabindex="-1"
+          >
+            Гарантия
+          </button>
+          <button
+            class="services-tab link"
+            role="tab"
+            type="button"
+            id="services-tab-3"
+            aria-selected="false"
+            aria-controls="tabpanel-3"
+            tabindex="-1"
+          >
+            Кредит
+          </button>
         </p>
+
+        <section
+          class="services-tabpanel delivery"
+          role="tabpanel"
+          id="services-tabpanel-1"
+          tabindex="0"
+          aria-labelledby="services-tab-1"
+        >
+          <h3 class="delivery-title">Доставка</h3>
+          <p class="delivery-description">
+            Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+            совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на
+            ваш этаж.
+          </p>
+        </section>
+        <section
+          class="services-tabpanel services-tabpanel--hidden guarantee"
+          role="tabpanel"
+          id="services-tabpanel-2"
+          tabindex="0"
+          aria-labelledby="services-tab-2"
+        >
+          <h3 class="guarantee-title">Доставка</h3>
+          <p class="guarantee-description">
+            Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+          </p>
+        </section>
+        <section
+          class="services-tabpanel services-tabpanel--hidden credit"
+          role="tabpanel"
+          id="services-tabpanel-3"
+          tabindex="0"
+          aria-labelledby="services-tab-3"
+        >
+          <h3 class="credit-title">Доставка</h3>
+          <p class="credit-description">
+            Залезть в долговую яму стало проще! Кредитные консультанты подберут
+            для вас наиболее выгодные условия кредита. Выгодные для банка,
+            разумеется.
+          </p>
+        </section>
 
         <ol class="services-list">
           <li class="services-item item-delivery item-current">
