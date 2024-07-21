@@ -1,0 +1,54 @@
+@font-face {
+  font-family: var(--one-family);
+  /* font-family: "Rubik", Arial, Helvetica, sans-serif; */
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/rubik/rubik-400.woff2") format(woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--one-family);
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/rubik/rubik-700.woff2") format(woff2);
+  font-display: swap;
+}
+@font-face {
+  font-family: var(--second-family);
+  font-weight: 800;
+  font-style: normal;
+  src: url("../fonts/raleway/raleway-800.woff2") format(woff2);
+  font-display: swap;
+}
+
+:root {
+  --one-family: "Rubik", Arial, Helvetica, sans-serif;
+  --second-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+:root {
+  --status-success: #08af00;
+  --status-error: #ff3d3d;
+  --status-warning: #fd912e;
+  --basic-black: #000;
+  --basic-dark: #444;
+  --basic-white: #fff;
+  --basic-light: #f0f0f0;
+  --basic-gray: #dcdcdc;
+  --basic-light-gray: #ebebeb;
+  --special-yellow-dark: #ffc700;
+  --special-yellow-light: #ffe17f;
+  --special-purple: #af4fff;
+  --special-brown: #64534a;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: var(--font-family); */
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--basic-dark);
+  background-color: var(--basic-white);
+}
