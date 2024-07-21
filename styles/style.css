@@ -1,20 +1,19 @@
 @font-face {
-  font-family: var(--one-family);
-  /* font-family: "Rubik", Arial, Helvetica, sans-serif; */
+  font-family: Rubik;
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/rubik/rubik-400.woff2") format(woff2);
   font-display: swap;
 }
 @font-face {
-  font-family: var(--one-family);
+  font-family: Rubik;
   font-weight: 700;
   font-style: normal;
   src: url("../fonts/rubik/rubik-700.woff2") format(woff2);
   font-display: swap;
 }
 @font-face {
-  font-family: var(--second-family);
+  font-family: Raleway;
   font-weight: 800;
   font-style: normal;
   src: url("../fonts/raleway/raleway-800.woff2") format(woff2);
@@ -44,11 +43,60 @@
 body {
   margin: 0;
   padding: 0;
-  /* font-family: var(--font-family); */
-  font-family: "Rubik", sans-serif;
+  font-family: var(--one-family);
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-dark);
   background-color: var(--basic-white);
+}
+
+.search {
+  position: relative;
+}
+.search-label::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 17px;
+  background-image: url("../images-decorative/svg-icons-1/search.svg");
+  background-repeat: no-repeat;
+}
+
+.services-tabpanel.delivery,
+.services-tabpanel.credit,
+.services-tabpanel.guarantee {
+  position: relative;
+}
+.services-tabpanel.delivery::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 136px;
+  height: 165px;
+  background-image: url("../images-decorative/png-step-3/delivery.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.services-tabpanel.credit::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 156px;
+  height: 189px;
+  background-image: url("../images-decorative/png-step-3/credit.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+}
+
+.services-tabpanel.guarantee::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 171px;
+  height: 195px;
+  background-image: url("../images-decorative/png-step-3/guarantee.png");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
