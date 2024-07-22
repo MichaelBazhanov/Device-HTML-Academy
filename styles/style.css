@@ -47,12 +47,24 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
-  color: var(--basic-dark);
+  color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
+/* В шапке поиск */
 .search {
   position: relative;
+  font-size: 16px;
+  line-height: 20px;
+}
+.search-input,
+.search-submit {
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+}
+.search-submit {
+  text-align: center;
 }
 .search-label::after {
   content: "";
@@ -61,6 +73,35 @@ body {
   height: 17px;
   background-image: url("../images-decorative/svg-icons-1/search.svg");
   background-repeat: no-repeat;
+}
+
+/* Шапка навигация */
+.navigation-list,
+.navigation-catalog-group .navigation-catalog-link {
+  font-family: var(--second-family);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.navigation-user {
+  font-family: var(--one-family);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  letter-spacing: normal;
+  text-transform: initial;
+}
+.navigation-link,
+.navigation-catalog-link {
+  color: inherit;
+  text-decoration: none;
+}
+.navigation-catalog-list {
+  font-family: var(--one-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .services-tabpanel.delivery,
