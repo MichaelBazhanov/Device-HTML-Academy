@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Device - магазин электроники</title>
+    <meta
+      name="keywords"
+      content="Device - магазин электроники на любой вкус"
+    />
+    <meta name="description" content="Хороший магазин техники на любой выбор" />
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header class="page-header">
       <nav class="navigation">
+        <!-- Логотип -->
         <img
           class="logo"
           src="images-content/logo/logo-black.svg"
@@ -17,6 +23,7 @@
           alt="Логотип - Device - магазин электроники"
         />
 
+        <!-- Форма поиска -->
         <form
           class="search"
           action="https://echo.htmlacademy.ru/"
@@ -35,6 +42,7 @@
           <button class="search-submit" type="submit">Найти</button>
         </form>
 
+        <!-- Пользовательское меню -->
         <menu class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link icon-in" href="#">Войти</a>
@@ -53,6 +61,7 @@
           </li>
         </menu>
 
+        <!-- Навигационное меню -->
         <menu class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Доставка</a>
@@ -65,12 +74,18 @@
           </li>
         </menu>
 
+        <!-- Навигационный каталог -->
         <div class="navigation-catalog">
           <p class="navigation-catalog-group">
-            <a class="navigation-catalog-link" href="#">Каталог товаров</a>
+            <label
+              class="navigation-catalog-title"
+              for="navigation-catalog-button"
+              >Каталог товаров</label
+            >
             <button
               class="navigation-catalog-button button-toggle"
               type="button"
+              id="navigation-catalog-button"
             >
               <span class="visually-hidden">Развернуть или свернуть</span>
             </button>
@@ -111,6 +126,7 @@
     <main class="page-index">
       <h1 class="visually-hidden">Device - магазин электроники</h1>
 
+      <!-- Галерея -->
       <section class="gallery">
         <h2 class="visually-hidden">Галерея</h2>
 
@@ -288,6 +304,7 @@
         </ul>
       </section>
 
+      <!-- Популярные разделы -->
       <section class="popular-sections">
         <h2 class="visually-hidden">Популярные разделы</h2>
 
@@ -367,34 +384,33 @@
         </ul>
       </section>
 
+      <!-- Дополнительный сервис -->
       <section class="services services-tabs">
         <h2 class="visually-hidden">Сервисы</h2>
 
-        <ol class="services-advantages">
+        <!-- Экстра сервис -->
+        <ol class="extra-service">
           <li
-            class="services-advantages-item services-advantages-item-icon-delivery services-advantages-item-current"
+            class="extra-service-item extra-service-item-icon-delivery extra-service-item-current"
           >
-            <a class="services-advantages-link" href="#"
+            <a class="extra-service-link" href="#"
               >Доставка редкого товара по заказ</a
             >
           </li>
-          <li
-            class="services-advantages-item services-advantages-item-icon-guarantee"
-          >
-            <a class="services-advantages-link" href="#"
+          <li class="extra-service-item extra-service-item-icon-guarantee">
+            <a class="extra-service-link" href="#"
               >Расширенная 10 летняя гарантии только у нас</a
             >
           </li>
-          <li
-            class="services-advantages-item services-advantages-item-icon-credit"
-          >
-            <a class="services-advantages-link" href="#"
+          <li class="extra-service-item extra-service-item-icon-credit">
+            <a class="extra-service-link" href="#"
               >Персональные предложение по кредиту и только очень выгодных
               условиях</a
             >
           </li>
         </ol>
 
+        <!-- Аккордеон -->
         <p
           class="services-tablist"
           role="tablist"
@@ -448,6 +464,7 @@
             ваш этаж.
           </p>
         </section>
+
         <section
           class="services-tabpanel services-tabpanel--hidden guarantee"
           role="tabpanel"
@@ -461,6 +478,7 @@
             переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
           </p>
         </section>
+
         <section
           class="services-tabpanel services-tabpanel--hidden credit"
           role="tabpanel"
@@ -477,6 +495,7 @@
         </section>
       </section>
 
+      <!-- О нас -->
       <section class="about">
         <h2 class="title">О нас</h2>
         <p class="text">
@@ -495,6 +514,7 @@
         <a class="link" href="#">Подробнее о нас</a>
       </section>
 
+      <!-- Контакты -->
       <section class="contacts">
         <h2 class="title">Контакты</h2>
         <p class="text">
@@ -521,6 +541,7 @@
         <a class="link" href="#">Напишите нам</a>
       </section>
 
+      <!-- Рассылка -->
       <section class="newsletter">
         <h2 class="title">Подпишитесь на рассылку</h2>
         <p class="text">
