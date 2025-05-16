@@ -244,12 +244,12 @@ body {
 .page-footer {
   background-color: var(--basic-dark);
 }
-.address-contact {
+.contact-address {
   font-size: 16px;
   line-height: 20px;
   color: var(--basic-white);
 }
-.footer-services-link {
+.footer-navigation-link {
   color: var(--basic-white);
   text-decoration: none;
 }
